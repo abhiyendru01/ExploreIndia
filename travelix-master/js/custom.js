@@ -1,20 +1,4 @@
-/* JS Document */
 
-/******************************
-
-[Table of Contents]
-
-1. Vars and Inits
-2. Set Header
-3. Init Home Slider
-4. Init Menu
-5. Init Search
-6. Init CTA Slider
-7. Init Testimonials Slider
-8. Init Search Form
-
-
-******************************/
 
 $(document).ready(function()
 {
