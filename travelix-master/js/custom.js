@@ -4,12 +4,6 @@ $(document).ready(function()
 {
 	"use strict";
 
-	/* 
-
-	1. Vars and Inits
-
-	*/
-
 	var menu = $('.menu');
 	var menuActive = false;
 	var header = $('.header');
@@ -33,12 +27,6 @@ $(document).ready(function()
 	initCtaSlider();
 	initTestSlider();
 	initSearchForm();
-
-	/* 
-
-	2. Set Header
-
-	*/
 
 	function setHeader()
 	{
@@ -149,15 +137,12 @@ $(document).ready(function()
 				});
 			}
 
-			// Fired before current slide change
 			homeSlider.on('change.owl.carousel', function(event)
 			{
 				var $currentItem = $('.home_slider_item', homeSlider).eq(event.item.index);
 				var $elemsToanim = $currentItem.find("[data-animation-out]");
 				setAnimation ($elemsToanim, 'out');
 			});
-
-			// Fired after current slide has been changed
 			homeSlider.on('changed.owl.carousel', function(event)
 			{
 				var $currentItem = $('.home_slider_item', homeSlider).eq(event.item.index);
@@ -166,12 +151,6 @@ $(document).ready(function()
 			})
 		}
 	}
-
-	/* 
-
-	4. Init Menu
-
-	*/
 
 	function initMenu()
 	{
@@ -220,11 +199,6 @@ $(document).ready(function()
 		menuActive = false;
 	}
 
-	/* 
-
-	5. Init Search
-
-	*/
 
 	function initSearch()
 	{
@@ -243,12 +217,6 @@ $(document).ready(function()
 		}
 	}
 
-	/* 
-
-	6. Init CTA Slider
-
-	*/
-
 	function initCtaSlider()
 	{
 		if($('.cta_slider').length)
@@ -264,8 +232,6 @@ $(document).ready(function()
 				dots:false,
 				smartSpeed:1200
 			});
-
-			/* Custom nav events */
 			if($('.cta_slider_prev').length)
 			{
 				var prev = $('.cta_slider_prev');
