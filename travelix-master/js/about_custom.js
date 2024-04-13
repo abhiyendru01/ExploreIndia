@@ -1,13 +1,7 @@
 
 $(document).ready(function()
 {
-	"use strict";
-
-	/* 
-
-	1. Vars and Inits
-
-	*/
+	"use strict;
 
 	var menu = $('.menu');
 	var menuActive = false;
@@ -62,12 +56,6 @@ $(document).ready(function()
 			closeMenu();
 		}
 	}
-
-	/* 
-
-	3. Init Menu
-
-	*/
 
 	function initMenu()
 	{
@@ -124,22 +112,15 @@ $(document).ready(function()
 			var statsItems = $('.stats_item');
 			statsItems.each(function()
 			{
-				//Get .stats_bar that is inside the .stats_item
 				var item = $(this).find('.stats_bar');
-				//Get the element that is going to show the percentage in graph
 				var perc = item.find('.stats_bar_perc');
-				//Get the element that is going to show the percentage in number
 				var val = item.find('.stats_bar_value');
-				//Get the first value
 				var x = item.attr("data-x");
-				//Get the second value
 				var y = item.attr("data-y");
-				//Get the percentage bar color
 				var clr = item.attr("data-color");
 
-				//Get the percentage increase/decrease
 				var xPerc = Math.round(((y - x) / x) * 100);
-				//If it's a positive value
+
 				if(xPerc > 0)
 				{
 					var percBarWidth = xPerc;
@@ -173,12 +154,6 @@ $(document).ready(function()
 		}
 	}
 
-	/* 
-
-	5. Initialize Milestones
-
-	*/
-
 	function initMilestones()
 	{
 		if($('.milestone_counter').length)
@@ -190,9 +165,6 @@ $(document).ready(function()
 	    		var ele = $(this);
 	    		var endValue = ele.data('end-value');
 	    		var eleValue = ele.text();
-
-	    		/* Use data-sign-before and data-sign-after to add signs
-	    		infront or behind the counter number */
 	    		var signBefore = "";
 	    		var signAfter = "";
 
@@ -229,12 +201,6 @@ $(document).ready(function()
 	    	});
 		}
 	}
-
-	/* 
-
-	6. Init Search Form
-
-	*/
 
 	function initSearchForm()
 	{
