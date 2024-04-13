@@ -1,30 +1,6 @@
-/* JS Document */
-
-/******************************
-
-[Table of Contents]
-
-1. Vars and Inits
-2. Set Header
-3. Init Menu
-4. Init Isotope Filtering
-5. Init Search
-6. Init More Options
-7. Init Search Form
-
-
-******************************/
-
 $(document).ready(function()
 {
 	"use strict";
-
-	/* 
-
-	1. Vars and Inits
-
-	*/
-
 	var menu = $('.menu');
 	var menuActive = false;
 	var header = $('.header');
@@ -47,12 +23,6 @@ $(document).ready(function()
 	initSearch();
 	initMoreOptions();
 	initSearchForm();
-
-	/* 
-
-	2. Set Header
-
-	*/
 
 	function setHeader()
 	{
@@ -83,12 +53,6 @@ $(document).ready(function()
 			closeMenu();
 		}
 	}
-
-	/* 
-
-	3. Init Menu
-
-	*/
 
 	function initMenu()
 	{
@@ -137,12 +101,6 @@ $(document).ready(function()
 		menuActive = false;
 	}
 
-	/* 
-
-	4. Init Isotope Filtering
-
-	*/
-
     function initIsotopeFiltering()
     {
     	var sortBtn = $('.sort_btn');
@@ -173,7 +131,6 @@ $(document).ready(function()
 	            }
 	        });
 
-    		// Sorting
 	        sortBtn.each(function()
 	        {
 	        	$(this).on('click', function()
@@ -197,12 +154,6 @@ $(document).ready(function()
     	}
     }
 
-    /* 
-
-	5. Init Search
-
-	*/
-
 	function initSearch()
 	{
 		if($('.search_tab').length)
@@ -219,12 +170,6 @@ $(document).ready(function()
 			});
 		}
 	}
-
-	/* 
-
-	6. Init More Options
-
-	*/
 
 	function initMoreOptions()
 	{
@@ -253,12 +198,6 @@ $(document).ready(function()
 			});
 		}
 	}
-
-	/* 
-
-	7. Init Search Form
-
-	*/
 
 	function initSearchForm()
 	{
