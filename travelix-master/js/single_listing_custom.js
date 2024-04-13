@@ -1,31 +1,6 @@
-/* JS Document */
-
-/******************************
-
-[Table of Contents]
-
-1. Vars and Inits
-2. Set Header
-3. Init Menu
-4. Init Search
-5. Init More Options
-6. Init Listing Slider
-7. Init Lightbox
-8. Init Google Map
-9. Init Search Form
-
-
-******************************/
-
 $(document).ready(function()
 {
 	"use strict";
-
-	/* 
-
-	1. Vars and Inits
-
-	*/
 
 	var menu = $('.menu');
 	var menuActive = false;
@@ -52,12 +27,6 @@ $(document).ready(function()
 	initLightbox();
 	initGoogleMap();
 	initSearchForm();
-
-	/* 
-
-	2. Set Header
-
-	*/
 
 	function setHeader()
 	{
@@ -88,12 +57,6 @@ $(document).ready(function()
 			closeMenu();
 		}
 	}
-
-	/* 
-
-	3. Init Menu
-
-	*/
 
 	function initMenu()
 	{
@@ -142,12 +105,6 @@ $(document).ready(function()
 		menuActive = false;
 	}
 
-    /* 
-
-	4. Init Search
-
-	*/
-
 	function initSearch()
 	{
 		if($('.search_tab').length)
@@ -165,11 +122,6 @@ $(document).ready(function()
 		}
 	}
 
-	/* 
-
-	5. Init More Options
-
-	*/
 
 	function initMoreOptions()
 	{
@@ -198,12 +150,6 @@ $(document).ready(function()
 			});
 		}
 	}
-
-	/* 
-
-	6. Init Listing Slider
-
-	*/
 
 	function initListingSlider()
 	{
@@ -252,12 +198,6 @@ $(document).ready(function()
 		}
 	}
 
-	/*
-
-	7. Init Lightbox
-
-	*/
-
 	function initLightbox()
 	{
 		if($('.cboxElement').length)
@@ -269,11 +209,6 @@ $(document).ready(function()
 		}
 	}
 
-	/* 
-
-	8. Init Google Map
-
-	*/
 
 	function initGoogleMap()
 	{
@@ -298,10 +233,8 @@ $(document).ready(function()
 			styles:[]
     	}
 
-    	// Initialize a map with options
     	map = new google.maps.Map(document.getElementById('map'), mapOptions);
-   
-		// Re-center map after window resize
+
 		google.maps.event.addDomListener(window, 'resize', function()
 		{
 			setTimeout(function()
@@ -311,12 +244,6 @@ $(document).ready(function()
 			}, 1400);
 		});
 	}
-
-	/* 
-
-	9. Init Search Form
-
-	*/
 
 	function initSearchForm()
 	{
