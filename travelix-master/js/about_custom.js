@@ -1,18 +1,3 @@
-/* JS Document */
-
-/******************************
-
-[Table of Contents]
-
-1. Vars and Inits
-2. Set Header
-3. Init Menu
-4. Init Stats
-5. Initialize Milestones
-6. Init Search Form
-
-
-******************************/
 
 $(document).ready(function()
 {
@@ -47,11 +32,6 @@ $(document).ready(function()
 	initMilestones();
 	initSearchForm();
 
-	/* 
-
-	2. Set Header
-
-	*/
 
 	function setHeader()
 	{
@@ -136,20 +116,12 @@ $(document).ready(function()
 		menuActive = false;
 	}
 
-	/* 
-
-	4. Init Stats
-
-	*/
 
 	function initStats()
 	{
 		if($('.stats_item').length)
 		{
-			//Get all elements with .stats_item class
 			var statsItems = $('.stats_item');
-
-			//Go through each .stats_item
 			statsItems.each(function()
 			{
 				//Get .stats_bar that is inside the .stats_item
