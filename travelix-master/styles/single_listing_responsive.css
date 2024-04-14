@@ -533,37 +533,21 @@
 	}
 }
 
-/************
-11. 539px
-************/
-
 @media only screen and (max-width: 539px)
 {
 	
 }
-
-/************
-12. 480px
-************/
-
 @media only screen and (max-width: 480px)
 {
 	
 }
 
-/************
-13. 479px
-************/
 
 @media only screen and (max-width: 479px)
 {
 	h2{font-size: 24px;}
 	p{font-size: 13px;}
 }
-
-/************
-14. 400px
-************/
 
 @media only screen and (max-width: 400px)
 {
