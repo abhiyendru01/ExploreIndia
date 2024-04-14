@@ -1,30 +1,6 @@
-/* JS Document */
-
-/******************************
-
-[Table of Contents]
-
-1. Vars and Inits
-2. Set Header
-3. Init Menu
-4. Init Progress Bars
-5. Init Accordions
-6. Initialize Milestones
-7. Init Loaders
-8. Init Search Form
-
-
-******************************/
-
 $(document).ready(function()
 {
 	"use strict";
-
-	/* 
-
-	1. Vars and Inits
-
-	*/
 
 	var menu = $('.menu');
 	var menuActive = false;
@@ -50,13 +26,6 @@ $(document).ready(function()
 	initMilestones();
 	initLoaders();
 	initSearchForm();
-
-	/* 
-
-	2. Set Header
-
-	*/
-
 	function setHeader()
 	{
 		if(window.innerWidth < 992)
@@ -86,12 +55,6 @@ $(document).ready(function()
 			closeMenu();
 		}
 	}
-
-	/* 
-
-	3. Init Menu
-
-	*/
 
 	function initMenu()
 	{
@@ -138,12 +101,6 @@ $(document).ready(function()
 		menuActive = false;
 	}
 
-	/* 
-
-	4. Init Progress Bars
-
-	*/
-
 	function initProgressBars()
 	{
 		if($('.skill_bars').length)
@@ -178,8 +135,6 @@ $(document).ready(function()
 						svgStyle: {display: 'block', width: '100%', height: '100%'},
 						text: {
 							style: {
-								// Text color.
-								// Default: same as stroke color (options.color)
 								fontFamily: 'Open Sans',
 								textAlign: 'right',
 								fontSize: '14px',
@@ -205,11 +160,6 @@ $(document).ready(function()
 		}
 	}
 
-	/* 
-
-	5. Init Accordions
-
-	*/
 
 	function initAccordions()
 	{
@@ -273,12 +223,6 @@ $(document).ready(function()
 		}
 	}
 
-	/* 
-
-	6. Initialize Milestones
-
-	*/
-
 	function initMilestones()
 	{
 		if($('.milestone_counter').length)
@@ -290,9 +234,6 @@ $(document).ready(function()
 	    		var ele = $(this);
 	    		var endValue = ele.data('end-value');
 	    		var eleValue = ele.text();
-
-	    		/* Use data-sign-before and data-sign-after to add signs
-	    		infront or behind the counter number */
 	    		var signBefore = "";
 	    		var signAfter = "";
 
@@ -329,13 +270,6 @@ $(document).ready(function()
 	    	});
 		}
 	}
-
-	/* 
-
-	7. Init Loaders
-
-	*/
-
 	function initLoaders()
 	{
 		if($('.loader').length)
@@ -369,12 +303,6 @@ $(document).ready(function()
 			});
 		}
 	}
-
-	/* 
-
-	8. Init Search Form
-
-	*/
 
 	function initSearchForm()
 	{
