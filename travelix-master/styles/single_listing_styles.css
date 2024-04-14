@@ -1,49 +1,4 @@
 @charset "utf-8";
-/* CSS Document */
-
-/******************************
-
-[Table of Contents]
-
-1. Fonts
-2. Body and some general stuff
-3. Header
-	3.1 Top Bar
-	3.2 Logo
-	3.3 Main Nav
-	3.4 Menu
-4. Home
-	4.1 Home Slider
-	4.2 Home Slider Nav
-	4.3 Home Slider Dots
-5. Search
-6. Section Title
-7. Rating
-8. Search
-	8.1 Search Extras
-	8.2 Search More Options
-9. Hotel Info
-	9.1 Hotel Image
-	9.2 Hotel Gallery
-	9.3 Hotel Info Text
-	9.4 Hotel Info Tags
-10. Rooms
-11. Reviews
-12. Location on Map
-13. Footer
-	13.1 Footer - About
-	13.2 Footer - Blog
-	13.3 Footer - Tags
-	13.4 Footer - Contact Info
-14. Copyright
-
-
-******************************/
-
-/***********
-1. Fonts
-***********/
-
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
 @font-face
 {
